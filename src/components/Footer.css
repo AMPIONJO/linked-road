@@ -1,0 +1,73 @@
+.footer {
+    background-color: #8bc34a;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;/* Keep the height of the footer the same */
+    position: relative; /* Make sure the footer is positioned relative to the body */
+    z-index: 0; /* Ensures that the footer is behind the HeroSection */
+  }
+  
+  .footer-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .social-icon:hover {
+    transform: translateY(-3px);
+  }
+  
+  .footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  
+  .footer-contact-item {
+    margin-left: 50px;
+  }
+  
+  .footer-contact h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .footer-copyright {
+    font-size: 0.8rem;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .footer-text p, .footer-text li {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
