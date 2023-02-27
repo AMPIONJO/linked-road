@@ -35,7 +35,7 @@ function NavMenu() {
           </a>
         </li>
         <li className="navbar-item">
-          <a href="#register" className="navbar-link">
+          <a href="/register" className="navbar-link">
             REGISTER
           </a>
         </li>

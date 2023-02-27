@@ -4,6 +4,7 @@ import NavMenu from './components/NavMenu';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import About from './pages/About';
+import Registration from './pages/Registration';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/" element={<HeroSection />} />
+          <Route path="/register" element={<Registration />} />
         </Routes>
       </div>
       <Footer />

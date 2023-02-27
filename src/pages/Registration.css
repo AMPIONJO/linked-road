@@ -1,0 +1,155 @@
+.page-container {
+    background: linear-gradient(to bottom, rgb(81, 139, 14),rgba(255, 255, 255, 0.2), rgb(81, 139, 14));
+  }
+
+  .registration-form {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 50px;
+    background-color: rgba(129, 199, 132, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  
+  .registration-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #8bc34a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .registration-form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .registration-form input.form-control {
+    border-radius: 30px;
+    border: none;
+    border: 2px solid #8bc34a;
+    box-shadow: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  
+  .registration-form input.form-control:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-color: #6aae32;
+  }
+  
+  .registration-form .feedback {
+    font-size: 14px;
+  }
+  
+  .registration-form .btn {
+    background-color: #8bc34a;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .registration-form .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #6aae32;
+  }
+
+  .slide-1 .btn{
+    background-color: #8bc34a;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 25px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .slide-1 .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #6aae32;
+  }
+
+  /* split page into two halves */
+.page-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .left-half {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-half {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+  
+
+  .slide {
+    flex: 1;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* buttons */
+  .slide button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* registration form */
+  #registration-form {
+    display: none;
+  }
+  
+  #registration-form.active {
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
