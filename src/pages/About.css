@@ -1,6 +1,6 @@
 .about {
   padding-top: 70px;
-  background: linear-gradient(to bottom, rgb(81, 139, 14),rgba(255, 255, 255, 0.2), rgb(81, 139, 14));
+  /* background: linear-gradient(to bottom, rgb(141, 224, 58), rgba(255, 255, 255, 0.1), rgb(81, 139, 14)); */
 }
 
 
@@ -31,6 +31,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  margin-top: 30px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -74,6 +75,40 @@
 
 .carousel-indicators .active {
   background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 30px;
+  }
+
+  .about-image img {
+    max-width: 30%; /* set the maximum width to 200px */
+    height: auto;
+  }
+
+  .carousel-item {
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .carousel-item p {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
 }
 
 

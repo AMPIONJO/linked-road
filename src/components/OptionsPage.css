@@ -1,0 +1,12 @@
+.button_options {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, rgb(81, 139, 14),rgba(255, 255, 255, 0.2), rgb(81, 139, 14));
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .button_options h3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }

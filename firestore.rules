@@ -1,0 +1,45 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow read access to the 'users' collection and all its documents for anyone
+    match /users/{document=**} {
+      allow read;
+      
+      // Allow write access to any authenticated user for creating new documents
+      allow create: if request.auth != null;
+      
+      // Restrict update and delete access to only the owner of the document
+      allow update, delete: if request.auth != null && request.auth.uid == resource.data.uid;
+      
+      // Allow read access to specific fields in the 'users' document
+      match /address {
+        allow read: if request.auth != null;
+      }
+      
+      match /email {
+        allow read: if request.auth != null;
+      }
+      
+      match /estateName {
+        allow read: if request.auth != null;
+      }
+      
+      match /firstName {
+        allow read: if request.auth != null;
+      }
+      
+      match /lastName {
+        allow read: if request.auth != null;
+      }
+      
+      match /phoneNumber {
+        allow read: if request.auth != null;
+      }
+      
+      match /uid {
+        allow read: if request.auth != null;
+      }
+    }
+  }
+}
+

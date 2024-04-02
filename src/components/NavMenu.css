@@ -1,11 +1,27 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(139, 195, 74, 1));
-    padding: 10px 50px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), #e6b516);
+  padding: 10px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
+
   .navbar-logo img {
     height: 50px;
     padding: 1px
@@ -16,6 +32,8 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    z-index: 10; /* Increase the z-index value */
   }
   
   .navbar-item {
@@ -35,5 +53,86 @@
   .navbar-link:hover {
     color: #558b2f;
   }
+
+  .navbar-right {
+    display: flex;
+  }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 1000; /* Add this to ensure the menu icon is above the dropdown menu */
+  }
+  
+  .menu-icon i {
+    font-size: inherit;
+    font-weight: inherit;
+    z-index: 10; /* Increase the z-index value */
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), #e6b516);
+      padding: 5px 5px;
+    }
+  
+    .navbar-logo img {
+      height: 30px;
+      padding: 1px;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: white;
+      width: 50vw; /* Set the width to 50% of the viewport width */
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: fadeInDown 0.3s ease;
+    }
+  
+    .navbar-item {
+      margin: 0;
+      background-color: white;
+    }
+  
+    .navbar-link {
+      display: block;
+      padding: 12px 20px;
+    }
+  
+    .navbar-link:hover {
+      color: white;
+      background-color: #8bc34a;
+    }
+  
+    .navbar-item:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-menu.show {
+      display: flex;
+    }
+  }
+  
   
   

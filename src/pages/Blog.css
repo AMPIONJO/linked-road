@@ -1,0 +1,45 @@
+/* Blog.css */
+
+.blog-container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #90EE90; /* Light Green Background Color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+    transition: color 0.3s ease; /* Smooth text color change on hover */
+  }
+  
+  .blog-content {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  strong {
+    font-weight: bold;
+    color: #007acc; /* A shade of blue for strong text */
+  }
+  

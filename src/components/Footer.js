@@ -6,36 +6,38 @@ function Footer() {
   return (
     <footer className="footer" id="contact">
       <div className="footer-socials">
-        <a href="https://www.facebook.com">
+        <a >
+        {/* href="https://www.facebook.com" */}
           <FaFacebook className="social-icon" />
         </a>
-        <a href="https://www.twitter.com">
+        <a>
           <FaTwitter className="social-icon" />
         </a>
-        <a href="https://www.instagram.com">
+        <a>
           <FaInstagram className="social-icon" />
         </a>
-        <a href="https://www.linkedin.com">
+        <a>
           <FaLinkedin className="social-icon" />
         </a>
       </div>
       <div className="footer-contact">
         <div className="footer-contact-item">
           <h3>Address:</h3>
-          <p>123 Street Name</p>
-          <p>City, State ZIP</p>
+          <p>Link Road Residents Association</p>
+          <p>C/o Levilla Gardens  Office, Link  Road</p>
+          <p>Kikuyu, Kenya</p>
         </div>
         <div className="footer-contact-item">
           <h3>Phone:</h3>
-          <p>(123) 456-7890</p>
+          <p>+254716680088</p>
         </div>
         <div className="footer-contact-item">
           <h3>Email:</h3>
-          <p>example@email.com</p>
+          <p>linkroadassociation@yahoo.com</p>
         </div>
       </div>
       <div className="footer-copyright">
-        <p>&copy; 2023 LinkedRoad. All Rights Reserved.</p>
+        <p>&copy; 2024 Link Road. All Rights Reserved.</p>
       </div>
     </footer>
   );

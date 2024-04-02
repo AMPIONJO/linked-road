@@ -1,5 +1,5 @@
 .footer {
-    background-color: #8bc34a;
+    background-color: #e6b516;
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -60,6 +60,56 @@
 
   .footer-text p, .footer-text li {
     font-family: 'Lato', sans-serif;
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer {
+      background-color: #e6b516;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative; /* Make sure the footer is positioned relative to the body */
+      z-index: 0; /* Ensures that the footer is behind the HeroSection */
+      width: 100vw;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .footer-contact-item {
+      margin-bottom: 10px;
+      margin-left: 15px;
+    }
+
+    .footer-socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-right: 30px;
+      margin-bottom: 25px;
+    }
+
+    .footer-copyright {
+      font-size: 0.8rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .footer-contact h3 {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .footer-contact p {
+      font-size: 0.6rem;
+      margin: 0;
+    }
   }
   
   

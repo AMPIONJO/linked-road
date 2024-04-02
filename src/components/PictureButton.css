@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(100% / 3);
+    width: 100%;
     padding: 20px;
   }
   
@@ -14,7 +14,7 @@
   }
   
   .picture-button-image {
-    width: 100%;
+    width: 28vw;
     max-height: 200px;
     object-fit: cover;
     cursor: pointer;
@@ -24,6 +24,22 @@
 }
 .green_color {
     color: #8bc34a;
+  }
+
+  @media screen and (max-width: 768px) {
+    .picture-button-image {
+      width: 90vw;
+      max-height: 150px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+      
+  .picture-button-title {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
   }
   
   

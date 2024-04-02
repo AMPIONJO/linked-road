@@ -1,0 +1,72 @@
+.profile-pic-container {
+  position: relative;
+  margin-top: 10px;
+}
+
+.profile-pic {
+  max-width: 100%;
+}
+
+div.profile-pic-container button.change-pic-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #e6b516;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 30px;
+  border-color: #8bc34a;
+}
+
+.div.profile-pic-container button.change-pic-btn:hover {
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: #6aae32;
+  border-color: #8bc34a;
+}
+
+.btn-danger{
+    margin-left: 10px
+}
+
+.profile-info-container {
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.profile-info-container h2 {
+  margin-bottom: 20px;
+}
+
+.profile-info-container hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-pic-container {
+    max-width: 30vw;
+  }
+
+  div.profile-pic-container button.change-pic-btn {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateX(40%);
+    background-color: #8bc34a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    border-radius: 30px;
+    border-color: #8bc34a;
+  }
+
+  .profile-info-container h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+  

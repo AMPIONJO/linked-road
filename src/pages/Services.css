@@ -1,0 +1,214 @@
+/* Services.css */
+:root {
+    --mpesa-green: #158e0a; /* Replace with the actual MPESA green color code */
+    --mpesa-white: #ffffff;  /* Replace with the actual MPESA white color code */
+  }
+  
+  /* Apply MPESA colors to specific elements in the CSS file */
+  .services-title {
+    color: var(--mpesa-green);
+  }
+  
+  .mpesa-payment-title {
+    color: var(--mpesa-green);
+  }
+  
+  .bank-payment-title {
+    color: var(--mpesa-green);
+  }
+
+  /* Services.css */
+/* ... Other styles ... */
+
+/* Services.css */
+
+.mpesa-payment-widget {
+    text-align: center; /* Center-align the text content */
+    border: 1px solid var(--mpesa-green);
+    padding: 71px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: var(--mpesa-white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+
+  .bank-payment-widget {
+    text-align: center; /* Center-align the text content */
+    border: 1px solid var(--mpesa-green);
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: var(--mpesa-white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  .mpesa-payment-title {
+    color: var(--mpesa-green);
+  }
+  
+  /* Center the text within the widget */
+  .mpesa-payment-widget p {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  /* Center the text within the widget */
+  .bank-payment-widget p {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  
+  /* ... Other styles ... */
+
+/* Services.css */
+/* ... Other styles ... */
+
+.merchandise {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center-align the merchandise items */
+    margin: 20px; /* Keep a margin around the merchandise section */
+    display: flex; /* Use flex display to center horizontally */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+ 
+.merchandise-container {
+  text-align: center; /* Center-align the "Merchandise" title */
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+.merchandise-title {
+  color: var(--mpesa-green);
+}
+
+.merchandise-items {
+  display: flex;
+  justify-content: space-around; /* Space the merchandise items evenly */
+  flex-wrap: wrap; /* Wrap items if they exceed the width */
+  margin: 0 auto; /* Center horizontally */
+ 
+}
+
+.merchandise-item {
+  width: 30%; /* Set the width for individual merchandise items */
+  margin-bottom: 20px; /* Add margin to separate items */
+  text-align: center; /* Center-align text */
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-around; /* Space the payment options evenly */
+  flex-wrap: wrap; /* Wrap items if they exceed the width */
+  margin-top: 20px; /* Add margin to the top */
+}
+
+.payment-widget {
+  width: 50%; /* Set the width for payment widgets */
+}
+  
+  .merchandise-item {
+    background-color: #fff; /* Background color for merchandise items */
+    border: 1px solid #ddd; /* Border for merchandise items */
+    border-radius: 5px;
+    padding: 20px; /* Increase padding for spacing */
+    display: flex;
+    flex-direction: column; /* Vertically align items */
+    align-items: center; /* Center-align items */
+    width: calc(20% - 20px); /* Set the width to 30% (minus margin) for equal spacing */
+    text-align: center; /* Center-align text */
+  }
+  
+  .merchandise-item img {
+    width: 150px;
+    height: 110px;
+    margin-bottom: 10px; /* Add margin to separate image and text */
+  }
+  
+  .merchandise-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-to-cart-button {
+  background-color: var(--mpesa-green);
+  color: var(--mpesa-white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+  /* ... Other styles ... */
+@media screen and (max-width: 768px) {
+    .add-to-cart-button {
+      background-color: var(--mpesa-green);
+      color: var(--mpesa-white);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 70px; /* Change the width to your desired value */
+      height: 40px; /* Change the height to your desired value */
+    }
+
+    .merchandise-item {
+      background-color: #fff; /* Background color for merchandise items */
+      border: 1px solid #ddd; /* Border for merchandise items */
+      border-radius: 5px;
+      padding: 10px; /* Increase padding for spacing */
+      display: flex;
+      flex-direction: column; /* Vertically align items */
+      align-items: center; /* Center-align items */
+      width: 330px; /* Set the width to 30% (minus margin) for equal spacing */
+      text-align: center; /* Center-align text */
+    }
+
+    .payment-options {
+      display: flex;
+      flex-wrap: wrap; /* Wrap items if they exceed the width */
+      margin-top: 20px; /* Add margin to the top */
+    }
+
+    .mpesa-payment-widget {
+      text-align: center; /* Center-align the text content */
+      border: 1px solid var(--mpesa-green);
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      background-color: var(--mpesa-white);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+    }
+  
+    .bank-payment-widget {
+      text-align: center; /* Center-align the text content */
+      border: 1px solid var(--mpesa-green);
+      padding: 10px;
+      margin: 20px 0;
+      border-radius: 5px;
+      background-color: var(--mpesa-white);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+    }
+
+    .payment-widget {
+      width: 100%; /* Set the width for payment widgets */
+    }
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
