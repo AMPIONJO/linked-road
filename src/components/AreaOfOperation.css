@@ -1,0 +1,55 @@
+.area-of-operation {
+    width: 100%; /* Ensure the parent occupies the full width */
+    max-width: 1200px; /* Or whatever max width you prefer */
+    margin: 0 auto; /* Center the parent container if it has a max-width */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .maps-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center, if needed */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .maps-container > * {
+    align-self: center;
+  }
+  
+  
+  
+  .maps-container figure {
+    margin: 0 auto; /* Center the figure */
+    display: block; /* Treat the figure as a block for centering */
+  }
+  
+  
+  .area-of-operation figure {
+    margin: 0 auto; /* Centers the figure in the flex container */
+    text-align: center; /* Centers the figcaption text */
+    width: fit-content; /* Only take up as much width as necessary */
+  }
+  
+  
+  .area-of-operation img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust based on your preference */
+  }
+  
+  .area-of-operation figcaption {
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #333; /* Caption text color */
+    margin-top: 8px; /* Space between image and caption */
+  }
+  
+  @media (max-width: 768px) {
+    .area-of-operation img {
+      max-width: 100%;
+      max-height: 300px; /* Smaller height for smaller devices */
+    }
+  }
+  

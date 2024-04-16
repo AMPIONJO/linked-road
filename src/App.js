@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
+import AreaOfOperation from './components/AreaOfOperation';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import About from './pages/About';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/registers" element={<Registration />} />
             <Route path="/options/*" element={<OptionsPage />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/area-of-operation" element={<AreaOfOperation />} />
             <Route path="/services" element={<Services />} />
             <Route path="/latest-blog" element={<Blog />} />
           </Routes>

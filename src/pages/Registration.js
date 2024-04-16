@@ -34,6 +34,7 @@ const Registration = () => {
     phoneNumber: "",
     zone: "", // Default value
     address: "",
+    preferredCommittee: "", // New field for preferred committee
     paymentCode: "",
     password: "",
     confirmPassword: "",
@@ -53,7 +54,7 @@ const Registration = () => {
     const zonesAddresses = {
       "Zone A": ["Tiebae Drive", "Kigathi Drive", "Kahinga Drive", "Link Road Crescent"],
       "Zone B": ["Country Drive", "Kings Drive", "Dagimu Drive", "Cherry Drive", "Kageche Drive", "Muchiri Drive", "Muite Drive","Link Road Crescent", "Kikuyu Link Road"],
-      "Zone C": ["Mondonye Drive", "Matathi Drive", "Levilla Drive", "Stima Drive","Nyaga Road", "Kikuyu Link Road"],
+      "Zone C": ["Nyaga Drive","Mondonye Drive", "Matathi Drive", "Levilla Drive", "Stima Drive", "Kikuyu Link Road"],
     };
 
     const handleTermsChange = (event) => {
@@ -217,6 +218,7 @@ const Registration = () => {
             phoneNumber: formData.phoneNumber,
             estateName: formData.zone,
             address: formData.address,
+            preferredCommittee: formData.preferredCommittee,
             paymentCode: formData.paymentCode,
             paymentDetails: selectedPaymentDetails, // Include the selected payment details
             membershipNumber: userCount,  // Assign the membership number
@@ -444,6 +446,27 @@ const handleGoogleSignIn = (event) => {
   </div>
   <Form.Control.Feedback type="invalid" className="feedback">
     Please provide an address.
+  </Form.Control.Feedback>
+</Form.Group>
+
+<Form.Group controlId="preferredCommittee">
+  <Form.Label className="mb-0">Preferred Committee to Serve in:</Form.Label>
+  <Form.Control
+    as="select"
+    name="preferredCommittee"
+    value={formData.preferredCommittee}
+    onChange={handleInputChange} // Make sure this handler updates the formData state correctly
+    required
+  >
+    <option value="">Select a Committee</option>
+    <option value="Environment">Environment</option>
+    <option value="Membership">Membership</option>
+    <option value="Infrastructure">Infrastructure</option>
+    <option value="Security">Security</option>
+    <option value="None">None</option>
+  </Form.Control>
+  <Form.Control.Feedback type="invalid">
+    Please choose a preferred committee to serve in.
   </Form.Control.Feedback>
 </Form.Group>
 

@@ -76,4 +76,19 @@
     height: 60px;
     padding: 1px
   }
+  .images-container {
+    display: flex;
+    flex-direction: column; /* Change direction to column to align images vertically */
+    align-items: center; /* Center-align the items horizontally */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+
+  .achievement-image,
+  .mission-image {
+    max-width: 100px; /* Adjust the maximum width of the images */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    margin: 10px 0; /* Adjust margin to add space vertically */
+    border: 3px solid #ff9900; /* Adjust the border width and color */
+    border-radius: 8px; /* Optional: Add rounded corners to the border */
+  }
   }

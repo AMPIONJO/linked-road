@@ -105,6 +105,12 @@ useEffect(() => {
         </Link>
         </li>
         <li className="navbar-item" onClick={handleLinkClick}>
+        <Link to="/area-of-operation" className="navbar-link">
+            AREA OF OPERATION
+        </Link>
+        </li>
+
+        <li className="navbar-item" onClick={handleLinkClick}>
           <a href="#contact" className="navbar-link">
             CONTACT
           </a>
